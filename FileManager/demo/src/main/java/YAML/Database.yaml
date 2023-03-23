@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mydatabase
+      authentication-database: admin
+      username: user
+      password: password
+      auto-index-creation: true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
