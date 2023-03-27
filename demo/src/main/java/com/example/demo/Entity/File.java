@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 
 @Entity
 public class File {
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
 @Id
 private Long id;
     private String type;

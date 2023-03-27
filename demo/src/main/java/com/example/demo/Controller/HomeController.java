@@ -1,8 +1,5 @@
 package com.example.demo.Controller;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,16 +12,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+
 @Controller
 public class HomeController {
-
-    private static final String UPLOAD_DIRECTORY = "C:\\Users\\petia\\Рабочий стол\\FileManager\\demo\\src\\main\\resources\\static";
-
     @GetMapping("/")
     public String home(Model model) {
         File directory = new File(UPLOAD_DIRECTORY);
@@ -48,4 +43,6 @@ public class HomeController {
         }
         return "redirect:/";
     }
+
+    private static final String UPLOAD_DIRECTORY = "C:\\Users\\petia\\Рабочий стол\\FileManager\\demo\\src\\main\\resources\\static";
 }

@@ -1,0 +1,13 @@
+files:
+  - id: 1
+    type: "text"
+    name: "file1.txt"
+    creationDate: "2023-03-01T15:30:00"
+    modificationDate: "2023-03-01T15:30:00"
+    size: 1024
+  - id: 2
+    type: "image"
+    name: "image1.jpg"
+    creationDate: "2023-03-05T12:45:00"
+    modificationDate: "2023-03-05T12:45:00"
+    size: 5120
